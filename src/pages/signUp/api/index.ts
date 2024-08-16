@@ -5,8 +5,8 @@ import type { Form } from "../types";
 export const signUpFirstStep = async ({
   email,
   password,
-  passwordConfirm,
-}: Form) => {
+}: // passwordConfirm,
+Form) => {
   try {
     const response = await fetch("http://localhost:8080/auth/email", {
       method: "POST",
